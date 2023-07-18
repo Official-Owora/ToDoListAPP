@@ -42,7 +42,7 @@ string TaskDay(string day)
     Console.WriteLine("Enter your To-do List");
     var toDoListForFriday = Console.ReadLine();
     Console.WriteLine("Enter the time for your task");
-    var timeToCompletetoDoListForFriday = Console.ReadLine();
+    var timeToCompleteToDoList = Console.ReadLine();
     return day;
 }
 string NoTaskDay(string day)
