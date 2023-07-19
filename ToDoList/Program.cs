@@ -1,5 +1,4 @@
-﻿int daysOfWeek = 7;
-Console.WriteLine("Welcome to our To-Do List App");
+﻿Console.WriteLine("Welcome to our To-Do List App");
 while (true)
 {
 Console.WriteLine("Select a day to enter your TO-do List");
@@ -39,10 +38,10 @@ int daysOfTheWeek = int.Parse(Console.ReadLine());
 
 string TaskDay(string day)
 {
-    Console.WriteLine("Enter your To-do List");
-    var toDoListForFriday = Console.ReadLine();
-    Console.WriteLine("Enter the time for your task");
-    var timeToCompleteToDoList = Console.ReadLine();
+    Console.WriteLine($"Enter your To-do List");
+    string toDoListForFriday = Console.ReadLine();
+    Console.WriteLine("Enter the time for your task in the format eg 12:00 or 12:00PM");
+    TimeOnly timeToCompleteToDoList = TimeOnly.Parse(Console.ReadLine());
     return day;
 }
 string NoTaskDay(string day)
